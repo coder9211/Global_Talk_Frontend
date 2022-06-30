@@ -1,0 +1,40 @@
+.otp_main_box { 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp_main_box > form { 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f6fb;
+}
+
+.otp_input_box > input {
+    width: 60px;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px;
+    /* background: #3b8df5;  */
+    border: 1px solid #3b8df5;
+    /* color: white; */
+    font-size: 14px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.otp_button_box > button {
+    border: none;
+    background-color: #3b8df5;
+    font-size: 14px;
+    cursor: pointer;
+    /* outline: none; */
+    padding: 10px 20px; 
+    border-radius: 3px;
+    margin-top: 15px;
+    color: white;
+}

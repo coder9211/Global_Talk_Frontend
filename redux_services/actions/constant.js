@@ -1,0 +1,24 @@
+export const userSignupConstant = {
+    USER_SIGNUP_SUCCESS: "USER_SIGNUP_SUCCESS",
+    USER_SIGNUP_FAILED: "USER_SIGNUP_FAILED"
+}
+
+export const userOtpConstant = {
+    USER_OTP_SUCCESS: "USER_OTP_SUCCESS",
+    USER_OTP_FAILED: "USER_OTP_FAILED"
+}
+
+export const userLoginConstant = {
+    USER_LOGIN_SUCCESS: "USER_LOGIN_SUCCESS",
+    USER_LOGIN_FAILURE: "USER_LOGIN_FAILURE"
+}
+
+export const userProfileConstant = {
+    USER_PROFILE_SUCCESS: "USER_PROFILE_SUCCESS",
+    USER_PROFILE_FAILURE: "USER_PROFILE_FAILURE"
+}
+
+export const userLogoutConstant = {
+    USER_LOGOUT_SUCCESS: "USER_LOGOUT_SUCCESS",
+    USER_LOGOUT_FAILURE: "USER_LOGOUT_FAILURE"
+}

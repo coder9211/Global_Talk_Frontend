@@ -1,0 +1,162 @@
+#contact {
+    
+    height: 100%;
+    /* background-color: #3b8df5; */
+}
+
+.background {
+  display: flex;
+}
+
+.f_container {
+  flex: 0 1 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.screen {
+  position: relative;
+  /* background: #0a0c27; */
+  border-radius: 15px;
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.493), 0 15px 15px rgba(0, 0, 0, 0.445); */
+}
+
+.screen::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  /* box-shadow: 0 20px 40px rgba(0, 0, 00.4); */
+  z-index: -1; 
+  /* border: 1px solid #3b8df5; */
+  background-color: #f1f6fb;
+}
+
+.screen_body {
+  display: flex;
+}
+
+.screen_body_item {
+  flex: 1;
+  padding: 50px; 
+}
+
+.screen_body_item,
+.left {
+    display: flex;
+    flex-direction: column; 
+}
+
+.title { 
+    position: relative;
+    color: #3b8df5;
+    font-size: 26px;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 70px;
+    height: 3px;
+    background: #3b8df5;
+}
+
+.contact {
+    margin-top: auto;
+    font-size: 18px;
+    color: #3b8df5;
+}
+
+.form_group {
+    margin-bottom: 15px;
+} 
+
+.message {
+    margin-top: 40px;
+}
+
+.buttons {
+    margin-bottom: 0;
+}
+
+.form_control {
+    width: 100%;
+    padding: 10px 5px;
+    background: #3b8df5; 
+    border: 2px solid #3b8df5;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    border-radius: 3px;
+    /* z-index: 1; */
+}
+
+.form_control::placeholder {
+    color: white;
+}
+
+.form_control::focus {
+    border-bottom-color: rgb(163, 163, 163);
+}
+
+.form_button {
+    /* background: none; */
+    border: none;
+    background-color: #3b8df5;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    color: white;
+}
+
+/* .form_button:hover {
+    color: #3b8df5;
+} */
+
+@media screen and (max-width: 520px){
+    .screen_body {
+        flex-direction: column;
+    }
+    .screen_body_item,
+    .left {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        flex-direction: row;
+    }
+
+    .title span {
+        margin-right: 12px;
+    }
+    .title::after { 
+        display: none;
+    }
+
+    .contact {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .screen_body {
+        padding: 40px;
+    }
+    .screen_body_item {
+        padding: 0px;
+    }
+}
